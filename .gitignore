@@ -1,9 +1,12 @@
+# Keys
 *.pem
 *.key
-vpn-key*
+vpn-key
+
+# Terraform
 .terraform/
 *.tfstate
 *.tfstate.backup
-*.pem
-*.key
-terraform.tfvars
+
+# Allow tfvars (no secrets stored here)
+!terraform.tfvars
