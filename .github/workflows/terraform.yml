@@ -29,8 +29,8 @@ jobs:
 
       - name: Terraform Plan
         working-directory: infrastructure/root
-        run: terraform plan
+        run: terraform plan -var-file="terraform.tfvars"
 
       - name: Terraform Apply
         working-directory: infrastructure/root
-        run: terraform apply -auto-approve
+        run: terraform apply -var-file="terraform.tfvars" -auto-approve
