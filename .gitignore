@@ -1,3 +1,6 @@
+*.pem
+*.key
+vpn-key*
 .terraform/
 *.tfstate
 *.tfstate.backup
